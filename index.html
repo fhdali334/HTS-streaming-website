@@ -33,8 +33,8 @@
       <nav
         class="font-Poppins flex justify-between items-center lg:px-40 w-full max-w-1820 mx-auto"
       >
-        <img class="h-[80px] w-[112px]" src="./images/hts_logo.png" alt="" />
-        <div class="flex items-center gap-14">
+        <div class="flex justify-center items-center gap-16">
+          <img class="h-[80px] w-[112px]" src="./images/hts_logo.png" alt="" />
           <div class="bg-black h-10 rounded-xl py-3 px-8 flex">
             <i class="fa-solid fa-magnifying-glass text-white"></i>
             <input
@@ -43,7 +43,9 @@
               placeholder="Search titles here..."
             />
           </div>
-          <ul class="flex gap-8 text-gray">
+        </div>
+        <div class="flex items-center gap-12">
+          <ul class="flex gap-8 text-gray font-Poppins font-medium">
             <li class="hover:text-white cursor-pointer">Home</li>
             <li class="cursor-pointer">Movies</li>
             <li class="cursor-pointer">Live</li>
@@ -116,11 +118,14 @@
             </button>
           </div>
         </div>
-        <img
-          class="h-96 mt-10 max-[1505px]:mx-5"
-          src="images/placeholder.png"
-          alt=""
-        />
+        <div class="relative">
+          <img
+            class="h-96 mt-10 max-[1505px]:mx-5"
+            src="images/placeholder.png"
+            alt=""
+          />
+          <button class="absolute top-[42%] left-[42%]"><img class="w-28 h-28 "  src="images/coverFilm.png" alt="" /></button>
+        </div>
       </div>
       <div class="mt-32 pb-10 max-w-1820 mx-auto">
         <p class="text-white ml-36 text-xl font-semibold">Recent Watched</p>
@@ -128,17 +133,17 @@
           class="flex flex-wrap mx-auto justify-center max-w-1820 gap-12 mt-10"
         >
           <div
-            class="flex text-white bg-black py-4 px-10 rounded-2xl bg-opacity-60"
+            class="flex text-white bg-black py-4 px-5 rounded-2xl bg-opacity-70"
           >
-            <img class="h-40 py-2" src="images/p1.png" alt="" />
-            <div class="pl-3">
+            <img class="h-40 pr-5" src="images/p1.png" alt="" />
+            <div class="py-1 pr-5">
               <button
                 class="bg-darkBrown px-2 py-1 text-red border-red border rounded-xl"
               >
                 TV Show
               </button>
-              <h6 class="pt-8 text-base font-semibold">The Flash</h6>
-              <p class="pt-1 text-sm text-gray">Season 1, Episode 7</p>
+              <h6 class="pt-5 text-base font-medium">The Boxing Show</h6>
+              <p class="pt-1 text-sm text-gray font-light ">Season 1, Episode 7</p>
               <p class="flex justify-satrt pl-2 pt-3 text-xs text-gray">
                 17:05:34
               </p>
@@ -150,40 +155,18 @@
             </div>
           </div>
           <div
-            class="flex text-white bg-black py-4 px-10 rounded-2xl bg-opacity-60"
+            class="flex text-white bg-black py-4 px-5 rounded-2xl bg-opacity-70"
           >
-            <img class="h-40 py-2" src="images/p2.png" alt="" />
-            <div class="pl-3">
+            <img class="h-40 pr-5" src="images/p2.png" alt="" />
+            <div class="py-1 pr-5">
               <button
                 class="bg-darkBrown px-2 py-1 text-red border-red border rounded-xl"
               >
                 Islamic
               </button>
-              <h6 class="pt-4 text-base font-semibold">The Flash</h6>
-              <p class="pt-1 text-sm text-gray">Season 1, Episode 7</p>
-              <p class="flex justify-start pt-3 pl-2 text-xs text-gray">
-                02:56:11
-              </p>
-              <div class="pt-2">
-                <div class="mb-6 h-1 w-full bg-neutral-200 dark:bg-neutral-600">
-                  <div class="h-1 bg-red w-2/3"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex text-white bg-black py-4 px-10 rounded-2xl bg-opacity-60"
-          >
-            <img class="h-40 py-2" src="images/p3.png" alt="" />
-            <div class="pl-3">
-              <button
-                class="bg-darkBrown px-2 py-1 text-red border-red border rounded-xl"
-              >
-                WOW
-              </button>
-              <h6 class="pt-8 text-base font-semibold">The Flash</h6>
-              <p class="pt-1 text-sm text-gray">Season 1, Episode 7</p>
-              <p class="flex justify-start pl-2 pt-3 text-xs text-gray">
+              <h6 class="pt-5 text-base font-medium">MTJ Islamic Show</h6>
+              <p class="pt-1 text-sm text-gray font-light ">Season 1, Episode 7</p>
+              <p class="flex justify-satrt pl-2 pt-3 text-xs text-gray">
                 17:05:34
               </p>
               <div class="pt-2">
@@ -194,18 +177,40 @@
             </div>
           </div>
           <div
-            class="flex text-white bg-black py-4 px-10 rounded-2xl bg-opacity-60"
+            class="flex text-white bg-black py-4 px-5 rounded-2xl bg-opacity-70"
           >
-            <img class="h-40 py-2" src="images/p4.png" alt="" />
-            <div class="pl-3">
+            <img class="h-40 pr-5" src="images/p3.png" alt="" />
+            <div class="py-1 pr-5">
+              <button
+                class="bg-darkBrown px-2 py-1 text-red border-red border rounded-xl"
+              >
+                WOW
+              </button>
+              <h6 class="pt-5 text-base font-medium">Women Of Wealth</h6>
+              <p class="pt-1 text-sm text-gray font-light ">Season 1, Episode 7</p>
+              <p class="flex justify-satrt pl-2 pt-3 text-xs text-gray">
+                17:05:34
+              </p>
+              <div class="pt-2">
+                <div class="mb-6 h-1 w-full bg-neutral-200 dark:bg-neutral-600">
+                  <div class="h-1 bg-red w-2/3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex text-white bg-black py-4 px-5 rounded-2xl bg-opacity-70"
+          >
+            <img class="h-40 pr-5" src="images/p4.png" alt="" />
+            <div class="py-1 pr-5">
               <button
                 class="bg-darkBrown px-2 py-1 text-red border-red border rounded-xl"
               >
                 Sports
               </button>
-              <h6 class="pt-8 text-base font-semibold">The Flash</h6>
-              <p class="pt-1 text-sm text-gray">Season 1, Episode 7</p>
-              <p class="flex justify-start pl-2 pt-3 text-xs text-gray">
+              <h6 class="pt-5 text-base font-medium">Bowling Show....</h6>
+              <p class="pt-1 text-sm text-gray font-light ">Season 1, Episode 7</p>
+              <p class="flex justify-satrt pl-2 pt-3 text-xs text-gray">
                 17:05:34
               </p>
               <div class="pt-2">
@@ -239,7 +244,7 @@
           <div class="lg:col-span-2 md:col-span-2 col-span-1">
             <div class="relative cursor-pointer">
               <img
-                class="rounded-2xl lg:h-[384px] w-full object-cover"
+                class="rounded-2xl h-[384px] w-full object-cover"
                 src="images/grid/grid0.png"
                 alt=""
               />
@@ -269,7 +274,7 @@
           </div>
           <div class="relative cursor-pointer">
             <img
-              class="rounded-2xl w-full lg:h-[384px] object-cover"
+              class="rounded-2xl w-full h-[384px] object-cover"
               src="images/grid/grid3.png"
               alt=""
             />
@@ -304,7 +309,7 @@
           </div>
           <div class="relative cursor-pointer">
             <img
-              class="w-full lg:h-[384px] object-cover rounded-2xl"
+              class="w-full h-[384px] object-cover rounded-2xl"
               src="images/grid/grid2.png"
               alt=""
             />
@@ -339,7 +344,7 @@
           </div>
           <div class="relative cursor-pointer">
             <img
-              class="w-full lg:h-[384px] object-cover rounded-2xl"
+              class="w-full h-[384px] object-cover rounded-2xl"
               src="images/grid/grid4.png"
               alt=""
             />
@@ -374,7 +379,7 @@
           </div>
           <div class="relative cursor-pointer">
             <img
-              class="w-full lg:h-[384px] object-cover rounded-2xl"
+              class="w-full h-[384px] object-cover rounded-2xl"
               src="images/grid/grid5.png"
               alt=""
             />
@@ -693,14 +698,10 @@
         </div>
       </div>
     </div>
-    <div class="bg-red ">
-      <img class="absolute" src="images/lightplay.png" alt="">
-      <img class="absolute" src="images/darkplay (1).png" alt="">
-      
-
+    <div class="bg-red">
+      <img class="absolute" src="images/lightplay.png" alt="" />
+      <img class="absolute" src="images/darkplay (1).png" alt="" />
     </div>
-
-   
 
     <script>
       // Function to calculate and update slidesPerView dynamically
