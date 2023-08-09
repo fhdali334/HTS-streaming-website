@@ -148,8 +148,8 @@
   <div class=" mt-52 pb-8 mx-48">
     <p class=" text-white text-xl font-semibold">Recently Watched</p>
   </div>
-  <div class=" font-Poppins">
-    <div class="grid grid-cols-4 overflow-hidden px-4 justify-center gap-8">
+    <div class="overflow-hidden">
+      <div id="cardSlider" class="flex overflow-hidden px-4 justify-center gap-4 transition-transform">
         <div class=" flex text-white bg-black py-4 px-5 rounded-2xl bg-opacity-70"
           >
             <img class="h-40 pr-5" src="images/p1.png" alt="" />
@@ -251,6 +251,8 @@
           </div>
         </div>
       </div>
+      <button id="prevButton" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg">Previous</button>
+      <button id="nextButton" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg">Next</button>
     </div>
 
 
@@ -789,14 +791,45 @@
 
     </script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-    </script>
+      const cardSlider = document.getElementById('cardSlider');
+      const cards = cardSlider.querySelectorAll('.flex');
+   
+      let currentIndex = 0; // Index of the currently visible card
+      let visibleCards = 1; // Number of visible cards at a time
+   
+      function updateVisibleCards() {
+         if (window.innerWidth >= 640 && window.innerWidth < 768) {
+            visibleCards = 2;
+         } else if (window.innerWidth >= 768 && window.innerWidth < 1024) {
+            visibleCards = 3;
+         } else if (window.innerWidth >= 1024) {
+            visibleCards = 4;
+         } else {
+            visibleCards = 1;
+         }
+      }
+   
+      function slideCards(direction) {
+         updateVisibleCards();
+   
+         if (direction === 'prev' && currentIndex > 0) {
+            currentIndex -= visibleCards;
+         } else if (direction === 'next' && currentIndex < cards.length - visibleCards) {
+            currentIndex += visibleCards;
+         }
+   
+         cardSlider.style.transform = `translateX(-${currentIndex * (100 / visibleCards)}%)`;
+      }
+   
+      const prevButton = document.getElementById('prevButton');
+      const nextButton = document.getElementById('nextButton');
+   
+      prevButton.addEventListener('click', () => slideCards('prev'));
+      nextButton.addEventListener('click', () => slideCards('next'));
+   
+      // Initial update
+      updateVisibleCards();
+   </script>
+   
   </body>
 </html>
