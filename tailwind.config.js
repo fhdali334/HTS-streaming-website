@@ -9,13 +9,7 @@ module.exports = {
         'gray': 'rgba(255, 255, 255, 0.60)',
         'border-colour' : 'rgba(255, 255, 255, 0.20)',
         'darkBrown' : 'rgba(187, 0, 4, 0.12)',
-<<<<<<< HEAD
         'RGBbackground' : '#131313',
-=======
-        'RGBbackground' : 'rgba(0, 0, 0, 0.84)',
-        'dark-grey1': '#131313',
-        'normal-grey':'rgba(0, 0, 0, 0.84);'
->>>>>>> 270132cee89946bfe6afacc6eca0ee5b323f8108
       },
       maxWidth:{
         '1820' : '113.625rem',

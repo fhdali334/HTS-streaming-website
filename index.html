@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Rubik+One:ital,wght@0,400;0,700;1,400&display=swap"
     />
+    
 
     <link
       href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Rubik+Mono+One&display=swap"
@@ -29,54 +30,44 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-<<<<<<< HEAD
     <div class="bg-RGBbackground">
-=======
-    <div class="bg-dark-grey1">
->>>>>>> 270132cee89946bfe6afacc6eca0ee5b323f8108
       <nav
-        class="font-Poppins flex justify-between items-center lg:px-40 w-full max-w-1820 mx-auto"
+        class="font-Poppins flex justify-between items-center lg:px-40 w-full max-w-1820 py-4 mx-auto"
       >
-        <div class="flex justify-center items-center gap-5">
-          <img class="h-full w-[112px]" src="./images/hts_logo.png" alt="" />
-          <div class="bg-black h-10 rounded-xl py-3 px-4 flex">
-            <i class="fa-solid fa-magnifying-glass text-white text-sm"></i>
+        <div class="flex justify-center items-center gap-16">
+          <img class="h-[80px] w-[112px]" src="./images/hts_logo.png" alt="" />
+          <div class="bg-black h-14 w-96 rounded-[20px] gap-2 py-5 px-8 flex">
+            <i class="fa-solid fa-magnifying-glass text-white"></i>
             <input
-              class="px-4 bg-black text-gray text-sm outline-none"
+              class="px-2 bg-black text-gray text-sm outline-none"
               type="text"
               placeholder="Search titles here..."
             />
           </div>
         </div>
-        <div class="flex items-center gap-12">
-          <ul class="flex gap-8 font-Poppins text-gray font-semibold">
-            <li class="hover:text-white cursor-pointer">Home</li>
+        <div class="flex items-center gap-12 font-Poppins">
+          <ul class="flex gap-8 text-gray font-medium">
+            <li class="hover:text-white cursor-pointer font-medium">Home</li>
             <li class="hover:text-white cursor-pointer">TV Shows</li>
-<<<<<<< HEAD
             <div class="flex gap-2">
               <i class="fa-solid fa-circle pt-2 text-red text-[0.375rem]"></i>
               <li class="hover:text-white cursor-pointer">Live</li>
             </div>
-            <li class=" hover:text-white cursor-pointer">Pedicab Streams</li>
-=======
-            <li class="hover:text-white cursor-pointer">Live</li>
             <li class="hover:text-white cursor-pointer">Pedicab Streams</li>
-            <!-- <li class="cursor-pointer group-hover">more</li> -->
->>>>>>> 270132cee89946bfe6afacc6eca0ee5b323f8108
           </ul>
         </div>
         <div class="flex gap-3">
-          <div class="flex items-center gap-2 cursor-pointer mr-9">
+          <div class="flex items-center gap-2 cursor-pointer mr-9 font-Poppins">
             <i class="fa-solid fa-heart text-white text-xl"></i>
             <h2 class="text-sm font-extrabold text-white">Watchlist</h2>
           </div>
           <button
-            class="text-white hover:border hover:bg-red text-xs rounded-xl font-bold py-3 px-5 border-gray-500 border border-border-colour"
+            class="text-white hover:border hover:bg-red text-base rounded-[20px] font-bold py-4 px-6 border-gray-500 border border-border-colour"
           >
             Sign in
           </button>
           <button
-            class="bg-red text-white text-xs font-bold rounded-xl py-3 px-5"
+            class="bg-red text-white text-base font-bold py-4 px-6 rounded-[20px]"
           >
             Register
           </button>
@@ -117,15 +108,15 @@
           </div>
           <div class="flex gap-2 pt-3">
             <div
-              class="flex justify-between bg-red w-48 px-5 py-4 rounded-2xl items-center"
+              class="flex justify-between bg-red w-60 px-5 py-5 rounded-2xl items-center"
             >
-              <button class="text-white font-semibold hover:bg-red">
+              <button class="text-white text-xl font-semibold hover:bg-red">
                 Watch Now
               </button>
               <i class="fa-solid fa-play text-white"></i>
             </div>
             <button
-              class="w-48 px-5 py-4 text-white border font-Poppins rounded-2xl font-semibold hover:bg-red border-border-colour"
+              class="w-60 px-5 py-5 text-white text-xl border rounded-2xl font-semibold hover:bg-red border-border-colour"
             >
               Add to Watchlist
             </button>
@@ -133,7 +124,7 @@
         </div>
         <div class="relative">
           <img
-            class="h-96 mt-10 max-[1505px]:mx-5"
+            class="h-96 mt-14 max-[1505px]:mx-5"
             src="images/placeholder.png"
             alt=""
           />
@@ -142,16 +133,27 @@
           </button>
         </div>
       </div>
-      <div class="mt-32 pb-10 max-w-1820 mx-auto">
-        <p class="text-white ml-36 text-xl font-semibold">Recent Watched</p>
-        <div
-          class="flex flex-wrap mx-auto justify-center max-w-1820 gap-12 mt-10"
-        >
-          <div
-            class="flex cursor-pointer text-white bg-black py-4 px-5 rounded-2xl bg-opacity-70"
+
+
+
+
+
+
+
+
+
+
+
+      
+  <div class=" mt-52 pb-8 mx-48">
+    <p class=" text-white text-xl font-semibold">Recently Watched</p>
+  </div>
+  <div class=" font-Poppins">
+    <div class="grid grid-cols-4 overflow-hidden px-4 justify-center gap-8">
+        <div class=" flex text-white bg-black py-4 px-5 rounded-2xl bg-opacity-70"
           >
             <img class="h-40 pr-5" src="images/p1.png" alt="" />
-            <div class="py-1 pr-5">
+            <div class="py-1 pr-5"> 
               <button
                 class="bg-darkBrown px-2 py-1 text-red border-red border rounded-xl"
               >
@@ -161,7 +163,9 @@
               <p class="pt-1 text-sm text-gray font-light">
                 Season 1, Episode 7
               </p>
-              <p class="flex justify-satrt pl-2 pt-3 text-xs text-gray">
+              <p
+                class="flex justify-satrt pl-2 pt-3 text-xss text-gray"
+              >
                 17:05:34
               </p>
               <div class="pt-2">
@@ -172,7 +176,7 @@
             </div>
           </div>
           <div
-            class="flex cursor-pointer text-white bg-black py-4 px-5 rounded-2xl bg-opacity-70"
+            class=" flex text-white bg-black py-4 px-5 rounded-2xl bg-opacity-70"
           >
             <img class="h-40 pr-5" src="images/p2.png" alt="" />
             <div class="py-1 pr-5">
@@ -185,7 +189,9 @@
               <p class="pt-1 text-sm text-gray font-light">
                 Season 1, Episode 7
               </p>
-              <p class="flex justify-satrt pl-2 pt-3 text-xs text-gray">
+              <p
+                class="flex justify-satrt pl-2 pt-3 text-xs text-gray"
+              >
                 17:05:34
               </p>
               <div class="pt-2">
@@ -196,7 +202,7 @@
             </div>
           </div>
           <div
-            class="flex  cursor-pointer text-white bg-black py-4 px-5 rounded-2xl bg-opacity-70"
+            class=" flex text-white bg-black py-4 px-5 rounded-2xl bg-opacity-70"
           >
             <img class="h-40 pr-5" src="images/p3.png" alt="" />
             <div class="py-1 pr-5">
@@ -220,7 +226,7 @@
             </div>
           </div>
           <div
-            class="flex cursor-pointer text-white bg-black py-4 px-5 rounded-2xl bg-opacity-70"
+            class=" flex text-white bg-black py-4 px-5 rounded-2xl bg-opacity-70"
           >
             <img class="h-40 pr-5" src="images/p4.png" alt="" />
             <div class="py-1 pr-5">
@@ -233,11 +239,7 @@
               <p class="pt-1 text-sm text-gray font-light">
                 Season 1, Episode 7
               </p>
-<<<<<<< HEAD
               <p class="flex justify-satrt pl-2 pt-3 text-xs text-gray">
-=======
-              <p class="flex cursor-pointer justify-satrt pl-2 pt-3 text-xs text-gray">
->>>>>>> 270132cee89946bfe6afacc6eca0ee5b323f8108
                 17:05:34
               </p>
               <div class="pt-2">
@@ -249,6 +251,18 @@
           </div>
         </div>
       </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
     </section>
     <div class="bg-RGBbackground font-Poppins mx-auto">
       <div class="max-w-1820 min-[1820px]:px-28 mx-auto pt-20 pb-40">
@@ -658,7 +672,7 @@
               <div class="flex justify-center">
                 <img
                   class="opacity-100 scale-100 group-hover:scale-105 px-4 py-5"
-                  src="images/slider/s4.png"
+                  src="images/slider/s1.png"
                   alt=""
                 />
               </div>
@@ -676,7 +690,7 @@
               </div>
             </div>
             <div
-              class="swiper-slide mr-5 group bg-black hover:bg-white bg-opacity-0 rounded-xl cursor-pointer"
+              class="swiper-slide mr-5 bg-black hover:bg-white bg-opacity-0 rounded-xl cursor-pointer"
             >
               <div class="flex justify-center">
                 <img
@@ -738,7 +752,7 @@
           320: 1, // Set slidesPerView to 1 for screen width up to 320px
           480: 2, // Set slidesPerView to 2 for screen width up to 480px
           768: 3, // Set slidesPerView to 3 for screen width up to 768px
-          1024: 4, // Set slidesPerView to 4 for screen width up to 1024px
+          1024:4, // Set slidesPerView to 4 for screen width up to 1024px
           1200: 5, // Set slidesPerView to 5 for screen width up to 1200px
           1600: 6, // Set slidesPerView to 6 for screen width up to 1600px
           1800: 7,
@@ -766,14 +780,23 @@
         spaceBetween: 20, // Adjust the spacing between cards as needed
         navigation: {
           nextEl: ".swiper-next-button",
-        },
-        on: {
-          resize: function () {
-            swiper.params.slidesPerView = updateSlidesPerView(); // Update slidesPerView on window resize
-            swiper.update(); // Update Swiper
-          },
+          previousEl: ".swiper-prev-button",
         },
       });
+
+
+
+
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
     </script>
   </body>
 </html>
