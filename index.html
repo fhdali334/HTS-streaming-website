@@ -32,11 +32,11 @@
   <body>
     <div class="bg-RGBbackground">
       <nav
-        class="font-Poppins flex justify-between items-center lg:px-40 w-full max-w-1820 py-4 mx-auto"
+        class="font-Poppins flex justify-between items-center 2xl:px-40 w-full max-w-1820 py-4 px-8 mx-auto  "
       >
         <div class="flex justify-center items-center gap-16">
           <img class="h-[80px] w-[112px]" src="./images/hts_logo.png" alt="" />
-          <div class="bg-black h-14 w-96 rounded-[20px] gap-2 py-5 px-8 flex">
+          <div class="bg-black h-14 w-96 rounded-[20px] gap-2 py-5 px-8 flex max-[1750px]:hidden ">
             <i class="fa-solid fa-magnifying-glass text-white"></i>
             <input
               class="px-2 bg-black text-gray text-sm outline-none"
@@ -45,7 +45,7 @@
             />
           </div>
         </div>
-        <div class="flex items-center gap-12 font-Poppins">
+        <div class="flex items-center gap-12 font-Poppins max-[1750px]:hidden">
           <ul class="flex gap-8 text-gray font-medium">
             <li class="hover:text-white cursor-pointer font-medium">Home</li>
             <li class="hover:text-white cursor-pointer">TV Shows</li>
@@ -56,7 +56,7 @@
             <li class="hover:text-white cursor-pointer">Pedicab Streams</li>
           </ul>
         </div>
-        <div class="flex gap-3">
+        <div class="flex gap-3 max-[1750px]:hidden">
           <div class="flex items-center gap-2 cursor-pointer mr-9 font-Poppins">
             <i class="fa-solid fa-heart text-white text-xl"></i>
             <h2 class="text-sm font-extrabold text-white">Watchlist</h2>
@@ -71,6 +71,10 @@
           >
             Register
           </button>
+        </div> 
+        <!-- HAMBURGER MENU ITEMS -->
+        <div class="pr-4 hidden  max-[1750px]:block">
+          <i class="fa-solid fa-bars text-white text-4xl"></i>
         </div>
       </nav>
     </div>
